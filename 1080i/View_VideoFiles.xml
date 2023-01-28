@@ -7,12 +7,13 @@
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                <texture fallback="backgrounds/video.jpg" border="0">$INFO[Listitem.art(fanart)]</texture>
                 <fadetime>500</fadetime>
                 <colordiffuse>FF555555</colordiffuse>
             </control>
         </control>
         <control type="panel" id="55">
+            <include>video_background</include>
             <visible>$EXP[isVideoList]</visible>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>

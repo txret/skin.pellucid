@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
-	<include>fadeInOut</include>
+	<!--<include>fadeInOut</include>-->
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onload>
 	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
 	<onload>AlarmClock(hidemenu,setfocus(9999),00:20,true)</onload>
 	<onunload>CancelAlarm(hidemenu,true)</onunload>
@@ -121,6 +122,7 @@
 		           <colordiffuse>ffFFFFFF</colordiffuse>
 		           <aspectratio>stretch</aspectratio>
 		       </control>
+				<!--<control type="multiimage">-->
 				<control type="multiimage">
 					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 					<include>dimensionsFullscreen</include>
@@ -205,7 +207,7 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<include>menus-mainmenu</include>
+					<include>skinshortcuts-mainmenu</include>
 				</content>
 			</control>
 			<!--power / settings-->
@@ -259,13 +261,13 @@
 					</focusedlayout>
 					<content>
 						<item>
-							<label></label>
-							<onclick>ActivateWindow(Settings)</onclick>
-						</item>					
-						<item>
 							<label></label>
 							<onclick>ActivateWindow(shutdownmenu)</onclick>
 						</item>
+						<item>
+							<label></label>
+							<onclick>ActivateWindow(Settings)</onclick>
+						</item>					
 					</content>
 				</control>
 			</control>

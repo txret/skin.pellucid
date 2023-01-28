@@ -51,6 +51,7 @@
                     </control>
                 </focusedlayout>
                 <content>
+<!--
                     <item id="1">
                         <label>13016</label>
                         <visible>System.CanPowerDown + !Skin.HasSetting(exitFirst)</visible>
@@ -76,11 +77,6 @@
                         <thumb></thumb>
                         <onclick>Hibernate()</onclick>
                     </item>
-                    <item id="5">
-                        <label>13013</label>
-                        <thumb></thumb>
-                        <onclick>Reboot()</onclick>
-                    </item>
                     <item id="6">
                         <label>$LOCALIZE[20126] $INFO[system.profilename]</label>
                         <visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
@@ -101,6 +97,18 @@
                         <visible>System.CanPowerDown + Skin.HasSetting(exitFirst)</visible>
                         <thumb></thumb>
                         <onclick>Powerdown()</onclick>
+                    </item>
+-->
+                    <item id="5">
+                        <label>Reboot Kodi</label>
+                        <thumb></thumb>
+                        <onclick>Reboot()</onclick>
+                    </item>
+                    <item id="9">
+                        <visible>System.Platform.Android</visible>
+                        <label>Reload skin</label>
+                        <thumb></thumb>
+                        <onclick>ReloadSkin()</onclick>
                     </item>
                 </content>
             </control>

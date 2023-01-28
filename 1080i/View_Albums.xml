@@ -76,7 +76,7 @@
 	                    </item>
 	                </content>
 	            </control>
-				<!--quick links-->			
+				<!--quick links-->
 				<control type="panel" id="9998">
 	                <posx>90</posx>
 	                <posy>288</posy>
@@ -119,7 +119,7 @@
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
 	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist] - $INFO[listitem.year]</label>
-	                    </control>      
+	                    </control>
 	                </itemlayout>
 	                <focusedlayout width="352" height="5-col-gutter">
 	                    <control type="group">

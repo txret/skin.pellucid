@@ -5,7 +5,7 @@
     <onload>Skin.SetString(recentitems,music)</onload>
 	<views>50,51,52,53,54,55,56,57,59</views>
     <controls>
-        <include>globalBackground</include>
+        <include>music_background</include>
 		<control type="group">
             <visible>$EXP[isMusicSong]</visible>
             <control type="image">
@@ -55,7 +55,7 @@
             </control>
             <!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+				<include>pageHeader</include>
             </control>
         </control>
         <!--mini window-->

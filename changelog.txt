@@ -1,4 +1,9 @@
 **Changelog**
+[V3.1.1] ***NEXUS RELEASE***
+- Skin shortcuts re-added
+- Replace multiimage on home screen
+- Minor tweaks
+
 [V3.1.0]
 - Skin shortcuts removed
 

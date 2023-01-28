@@ -3,14 +3,7 @@
 	<include name="tvshows">
 		<control type="group">
 			<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists)</visible>
-			<control type="image">
-				<visible>control.hasfocus(9203) | control.hasfocus(9202)</visible>
-	            <include>dimensionsFullscreen</include>
-	            <texture fallback="colors/black.png">$INFO[container(9203).listitem.art(fanart)]</texture>
-	            <colordiffuse>FF555555</colordiffuse>
-	            <aspectratio>scale</aspectratio>
-				<fadetime>250</fadetime>
-	        </control>
+				<include>tv_background</include>
 			<control type="group" id="9201">
 				<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
 				<animation type="Conditional" condition="!controlgroup(9201).hasfocus">
@@ -71,7 +64,7 @@
 	                    </item>
 	                </content>
 	            </control>
-				<!--quick links-->			
+				<!--quick links-->
 				<control type="panel" id="9203">
 					<posx>90</posx>
 	                <posy>288</posy>

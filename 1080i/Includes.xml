@@ -25,7 +25,7 @@
 	<include file="View_Games.xml"/>
 	<include file="View_SpotifyAlbums.xml"/>
 	<include file="View_SpotifyArtists.xml"/>
-    <include file="Includes_menus.xml"/>
+    <include file="script-skinshortcuts-includes.xml"/>
     <include file="Includes_mediaShowcase.xml"/>
 
     <!--view type conditions-->
@@ -57,6 +57,65 @@
 
 	<!--weather-->
 	<expression name="hasWeather">!String.IsEmpty(Window(Weather).Property(WeatherProvider)) + !String.String.IsEmpty(weather.temperature) + !String.String.IsEmpty(weather.conditions)</expression>
+
+
+    <!-- Navigation screen backgrounds -->
+    <include name="music_background">
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/music.jpg</texture>
+            <colordiffuse>FF555555</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+    </include>
+    <include name="movie_background">
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/movie.jpg</texture>
+            <colordiffuse>FF555555</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+    </include>
+    <include name="game_background">
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/game.jpg</texture>
+            <colordiffuse>FF555555</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+    </include>
+    <include name="photo_background">
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/photo.jpg</texture>
+            <colordiffuse>FF555555</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+    </include>
+    <include name="tv_background">
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/tv.png</texture>
+            <colordiffuse>FF444444</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+    </include>
+    <include name="video_background">
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/video.jpg</texture>
+            <colordiffuse>FF555555</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+    </include>
+    <include name="settings_background">
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/settings.jpg</texture>
+            <colordiffuse>FF555555</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+    </include>
 
 	<!--item fanart-->
     <include name="itemFanart">

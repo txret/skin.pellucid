@@ -4,7 +4,7 @@
     <include>fadeInOut</include>
 	<views>51</views>
     <controls>
-        <include>globalBackground</include>
+        <include>game_background</include>
         <!--page container group-->
         <control type="group">
             <!--shift page for certain modal dialogs-->
@@ -29,7 +29,7 @@
             </control>
 			<!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+				<include>pageHeader</include>
             </control>
         </control>
         <!--hub menu-->

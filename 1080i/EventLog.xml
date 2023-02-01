@@ -4,7 +4,7 @@
     <views>570</views>
     <controls>
         <!--background-->
-        <include>globalBackground</include>
+        <include>settings_background</include>
         <control type="group">
             <posx>col-4-begin</posx>
             <posy>row-5-begin</posy>

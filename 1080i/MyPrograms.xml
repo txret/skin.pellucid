@@ -7,7 +7,7 @@
     <controls>
         <!--page container group-->
         <control type="group">
-            <include>globalBackground</include>
+            <include>tv_background</include>
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
             <!--Main content listing-->
@@ -132,7 +132,7 @@
             </control>
 			<!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+				<include>pageHeader</include>
             </control>
         </control>
         <!--mini window-->

@@ -3,7 +3,7 @@
     <defaultcontrol>61</defaultcontrol>
     <include>fadeInOut</include>
     <controls>
-        <include>globalBackground</include>
+        <include>settings_background</include>
         <control type="group">
             <posx>col-5-begin</posx>
             <posy>row-3-begin</posy>

@@ -3,7 +3,7 @@
     <defaultcontrol always="true">22</defaultcontrol>
 
     <controls>
-        <include>globalBackground</include>
+        <include>music_background</include>
         <control type="group">
             <!--animations-->
             <include>modalDialogInOutVertical</include>

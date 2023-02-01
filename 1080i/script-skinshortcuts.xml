@@ -5,8 +5,8 @@
     <onunload>control.setfocus(9000)</onunload>
     <controls>
 		<!--background-->
-        <include>globalBackground</include>
         <control type="group">
+            <include>settings_background</include>
             <posx>col-4-begin</posx>
             <posy>row-5-begin</posy>
             <!--animations-->
@@ -144,7 +144,7 @@
                     </control>
                 </focusedlayout>
             </control>
-		</control>     
+		</control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

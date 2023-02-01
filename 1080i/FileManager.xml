@@ -4,10 +4,10 @@
 
     <include>fadeInOut</include>
     <controls>
-        <include>globalBackground</include>
 		<!--mini window-->
 		<include>miniVideoPlayer</include>
         <control type="group">
+            <include>settings_background</include>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <!--page title-->

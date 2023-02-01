@@ -8,7 +8,7 @@
 		<effect type="fade" start="100" end="0" time="300"/>
 	</animation>
 	<controls>
-		<include>globalBackground</include>
+		<include>tv_background</include>
 		<!--page container group-->
 		<control type="group">
 			<!--shift page for certain modal dialogs-->
@@ -158,7 +158,7 @@
 			</control>
 			<!--page header-->
 			<control type="group">
-				<include>pageHeader</include>    
+				<include>pageHeader</include>
 			</control>
 			<control type="label" id="29">
 				<visible>false</visible>

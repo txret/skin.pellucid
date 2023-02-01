@@ -3,7 +3,7 @@
     <defaultcontrol always="true">50</defaultcontrol>
 	<views>50</views>
     <controls>
-        <include>globalBackground</include>
+        <include>music_background</include>
         <control type="group">
             <!--animations-->
             <include>modalDialogInOutVertical</include>

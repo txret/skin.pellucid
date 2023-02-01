@@ -97,7 +97,7 @@
     <!--home background location-->
     <variable name="homeBackgroundLocation">
         <value condition="!String.IsEmpty(Skin.String(homeBackground))">$INFO[Skin.String(homeBackground)]</value>
-        <value>homeBackgrounds</value>
+        <value>homebackgrounds</value>
     </variable>
     <!--menu logos-->
     <variable name="menuLogo">

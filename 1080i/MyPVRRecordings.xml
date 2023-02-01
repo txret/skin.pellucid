@@ -8,7 +8,7 @@
     </animation>
 	<views>50</views>
     <controls>
-        <include>globalBackground</include>
+        <include>tv_background</include>
         <!--page container group-->
         <control type="group">
             <!--window fader-->
@@ -161,7 +161,7 @@
             </control>
             <!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+				<include>pageHeader</include>
             </control>
         </control>
         <!--mini window-->

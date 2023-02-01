@@ -3,7 +3,7 @@
     <defaultcontrol>3</defaultcontrol>
     <controls>
         <!--background-->
-        <include>globalBackground</include>
+        <include>game_background</include>
         <control type="group">
             <posx>col-4-begin</posx>
             <posy>row-5-begin</posy>

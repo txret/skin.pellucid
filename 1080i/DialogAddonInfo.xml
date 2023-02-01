@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
     <controls>
-        <include>globalBackground</include>
+        <include>addons_background</include>
 		<!--mini window-->
 		<include>miniVideoPlayer</include>
         <!--About this addon-->

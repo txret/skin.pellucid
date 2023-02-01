@@ -3,11 +3,12 @@
     <!--Album browser-->
     <include name="musicalbum">
 		<control type="group">
+			<include>music_background</include>
 			<visible>$EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue]</visible>
 			<control type="image">
 				<visible>control.hasfocus(9998) | control.hasfocus(9123)</visible>
 	            <include>dimensionsFullscreen</include>
-	            <texture fallback="colors/black.png">$INFO[container(9998).listitem.art(fanart)]</texture>
+	            <texture>$INFO[container(9998).listitem.art(fanart)]</texture>
 	            <colordiffuse>FF555555</colordiffuse>
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>

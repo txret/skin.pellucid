@@ -9,15 +9,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
-			<include>globalBackground</include>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<include>dimensionsFullscreen</include>
-				<texture>colors/black.png</texture>
-				<colordiffuse>ccffffff</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
+			<include>music_background</include>
 			<!--fanart-->
 			<control type="image">
 				<visible>!container.content(albums)</visible>
@@ -25,7 +17,7 @@
 				<posy>0</posy>
 				<include>dimensionsFullscreen</include>
 				<aspectratio align="center" aligny="top">stretch</aspectratio>
-				<texture fallback="colors/black.png">$INFO[Listitem.art(fanart)]</texture>
+				<texture>$INFO[Listitem.art(fanart)]</texture>
 				<include>kenBurnsey</include>
 			</control>
 			<!--coverart-->

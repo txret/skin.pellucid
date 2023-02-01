@@ -4,10 +4,10 @@
     <include>fadeInOut</include>
     <controls>
         <!--background-->
-        <include>globalBackground</include>
+        <include>weather_background</include>
 		<!--page header-->
         <control type="group">
-			<include>pageHeader</include>    
+			<include>pageHeader</include>
         </control>
         <control type="group">
             <posx>col-1-begin</posx>

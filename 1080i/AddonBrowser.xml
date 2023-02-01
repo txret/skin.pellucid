@@ -3,7 +3,7 @@
     <defaultcontrol always="true">50</defaultcontrol>
 	<views>50,51</views>
     <controls>
-        <include>globalBackground</include>
+        <include>settings_background</include>
 		<!--mini window-->
 		<include>miniVideoPlayer</include>
         <control type="group" id="9999">
@@ -299,7 +299,7 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
-                </control>                
+                </control>
             </control>
             <control type="group">
                 <!--page scrollbar-->

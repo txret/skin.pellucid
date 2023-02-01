@@ -4,7 +4,7 @@
 
     <controls>
         <!--background-->
-        <include>globalBackground</include>
+        <include>tv_background</include>
         <control type="group">
             <!--animations-->
             <include>modalDialogInOutVertical</include>
@@ -231,7 +231,7 @@
                         <ondown>32</ondown>
                     </control>
                 </control>
-                <!--OK / Cancel / apply-->                 
+                <!--OK / Cancel / apply-->
                 <control type="panel" id="9000">
                     <posx>17-col</posx>
                     <posy>84</posy>

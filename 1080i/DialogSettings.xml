@@ -4,7 +4,7 @@
     <include>fadeInOut</include>
     <controls>
         <!--background-->
-        <include condition="!Player.HasVideo">globalBackground</include>
+        <include condition="!Player.HasVideo">movie_background</include>
         <control type="group">
             <animation type="conditional" condition="Window.IsVisible(sliderdialog) | window.isvisible(selectdialog) | window.isactive(subtitlesearch)" reversible="false">
                 <effect type="fade" start="100" end="0" time="200"/>

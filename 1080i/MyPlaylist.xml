@@ -5,7 +5,7 @@
     <include>fadeInOut</include>
 	<views>59</views>
     <controls>
-        <include>globalBackground</include>
+        <include>music_background</include>
         <!--fanart-->
         <control type="group">
             <control type="image">
@@ -44,8 +44,8 @@
             </control>
 			<!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
-            </control>           
+				<include>pageHeader</include>
+            </control>
         </control>
         <!--mini window-->
         <include>miniVideoPlayer</include>

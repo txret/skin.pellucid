@@ -2,10 +2,11 @@
 <includes>
     <include name="addonposters">
         <control type="group">
+			<include>settings_background</include>
             <visible>$EXP[isAddonMovieOrTVshow]</visible>
 			<control type="image">
 	            <include>dimensionsFullscreen</include>
-	            <texture fallback="colors/black.png">$INFO[listitem.art(fanart)]</texture>
+	            <texture>$INFO[listitem.art(fanart)]</texture>
 	            <colordiffuse>FF555555</colordiffuse>
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>

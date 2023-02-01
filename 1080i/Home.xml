@@ -6,8 +6,11 @@
 	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
 	<onload>AlarmClock(hidemenu,setfocus(9999),00:20,true)</onload>
 	<onunload>CancelAlarm(hidemenu,true)</onunload>
+	<!--"persistent multiimage"-->
+	<onload>RunScript(special://skin/scripts/cyclebg.py, load, special://skin/media/home_backgrounds, homebg)</onload>
+	<onload>AlarmClock(cyclehomebg, RunScript(special://skin/scripts/cyclebg.py, cycle, special://skin/media/home_backgrounds, homebg), 00:30, silent, loop)</onload>
+	<onunload>CancelAlarm(cyclehomebg, true)</onunload>
 	<controls>
-		<include>globalBackground</include>
 		<control type="group">
 			<animation type="conditional" condition="control.hasfocus(8001) | control.hasfocus(8002)">
 				<effect type="slide" start="0,0" end="0,-80" tween="sine" time="400"/>
@@ -113,16 +116,18 @@
 	                        <onclick>PlayerControl(next)</onclick>
 	                    </item>
 	                </content>
-	            </control>            
+	            </control>
 			</control>
 			<control type="group">
 				<control type="image">
-				   <include>dimensionsFullscreen</include>
-		           <texture>colors/black.png</texture>
-		           <colordiffuse>ffFFFFFF</colordiffuse>
-		           <aspectratio>stretch</aspectratio>
-		       </control>
-				<!--<control type="multiimage">-->
+					<include>dimensionsFullscreen</include>
+					<posx>0</posx>
+					<posy>0</posy>
+					<!--<texture>$INFO[Skin.String(homebg)]</texture>-->
+					<texture>$INFO[Window(home).Property(homebg)]</texture>
+					<fadetime>500</fadetime>
+				</control>
+				<!--<control type="multiimage">
 				<control type="multiimage">
 					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 					<include>dimensionsFullscreen</include>
@@ -134,11 +139,12 @@
 					<loop>yes</loop>
 					<aspectratio>scale</aspectratio>
 					<colordiffuse>99ffffff</colordiffuse>
-				</control>
+				</control>-->
 				<control type="image">
 					<include>dimensionsFullscreen</include>
 					<texture>vignette.png</texture>
 					<colordiffuse>ffffffff</colordiffuse>
+					<colordiffuse>99ffffff</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
 			</control>
@@ -152,7 +158,7 @@
 				<posx>col-5-begin</posx>
 				<animation condition="string.isEqual(Container(9000).NumItems,1)" effect="slide" end="432,0" time="0">conditional</animation>
 				<animation condition="string.isEqual(Container(9000).NumItems,2)" effect="slide" end="288,0" time="0">conditional</animation>
-				<animation condition="string.isEqual(Container(9000).NumItems,3)" effect="slide" end="144,0" time="0">conditional</animation>			
+				<animation condition="string.isEqual(Container(9000).NumItems,3)" effect="slide" end="144,0" time="0">conditional</animation>
 				<posy>row-12-begin</posy>
 				<width>18-col</width>
 				<height>12-row</height>
@@ -267,7 +273,7 @@
 						<item>
 							<label></label>
 							<onclick>ActivateWindow(Settings)</onclick>
-						</item>					
+						</item>
 					</content>
 				</control>
 			</control>
@@ -379,7 +385,7 @@
 					</control>
 				</control>
 			</control>
-		</control>	
+		</control>
 		<control type="button" id="9999">
             <posx>-500</posx>
             <posy>0</posy>

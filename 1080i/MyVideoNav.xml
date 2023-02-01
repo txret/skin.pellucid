@@ -7,7 +7,8 @@
     <include>fadeInOut</include>
 	<views>50,51,52,53,54,55,58,59</views>
     <controls>
-        <include>globalBackground</include>
+        <include condition="$EXP[isMovie]">movie_background</include>
+        <include condition="!$EXP[isMovie]">tv_background</include>
         <!--page container group-->
         <control type="group">
             <!--shift page for certain modal dialogs-->
@@ -51,10 +52,10 @@
 	                </control>
 	            </control>
             </control>
-			
+
             <!--page header-->
             <control type="group">
-				<include>pageHeader</include>    
+				<include>pageHeader</include>
             </control>
         </control>
         <!--mini window-->

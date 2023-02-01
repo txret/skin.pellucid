@@ -6,6 +6,14 @@
     <controls>
         <include>modalDialog</include>
         <control type="group">
+<!--
+            <control type="image">
+                <width>6-col</width>
+                <height>12-row</height>
+                <texture>colors/offblack.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+-->
             <posx>col-10-begin</posx>
             <posy>9-row</posy>
             <!--animations-->

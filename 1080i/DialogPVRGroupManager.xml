@@ -3,7 +3,7 @@
     <defaultcontrol always="true">13</defaultcontrol>
     <controls>
         <!--background-->
-        <include>globalBackground</include>
+        <include>tv_background</include>
         <control type="group">
             <posx>col-3-begin</posx>
             <posy>row-3-begin</posy>

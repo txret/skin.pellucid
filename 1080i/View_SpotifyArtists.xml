@@ -3,10 +3,11 @@
     <!--Spotify Artist browser-->
     <include name="musicspotifyartist">
         <control type="group">
+			<include>music_background</include>
 			<visible>$EXP[isMusicSpotifyArtist]</visible>
 			<control type="image">
 	            <include>dimensionsFullscreen</include>
-	            <texture fallback="colors/black.png">$INFO[container(56).listitem.art(thumb)]</texture>
+	            <texture>$INFO[container(56).listitem.art(thumb)]</texture>
 	            <colordiffuse>FF555555</colordiffuse>
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>

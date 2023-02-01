@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">52</defaultcontrol>
     <controls>
-        <include>globalBackground</include>
+        <include>kodi_background</include>
         <control type="group">
             <posx>col-10-begin</posx>
             <posy>row-8-begin</posy>

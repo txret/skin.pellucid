@@ -57,7 +57,7 @@
                 <colordiffuse>ffFFFFFF</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <include>globalBackground</include>
+            <include>tv_background</include>
         </control>
         <!--title-->
         <control type="group">

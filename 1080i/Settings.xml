@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
+    <include>fadeAltTwo</include>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onunload>
     <controls>
         <!--background-->
-	<include>settings_background</include>
+	    <include>settings_background</include>
 		<!--mini window-->
 		<include>miniVideoPlayer</include>
         <!--main menu-->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">22</defaultcontrol>
-
+    <include>fadeAltTwo</include>
     <controls>
         <include>music_background</include>
         <control type="group">

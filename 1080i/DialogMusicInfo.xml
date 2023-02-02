@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">8000</defaultcontrol>
+	<include>fadeAltOne</include>
 	<animation type="windowClose">
 		<effect type="fade" start="100" end="0" time="400" delay="400"/>
 	</animation>

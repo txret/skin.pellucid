@@ -4,9 +4,7 @@
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onload condition="window.isactive(radiochannels)">Skin.SetString(recentitems,music)</onload>
     <onload condition="window.isactive(tvchannels)">Skin.SetString(recentitems,video)</onload>
-    <animation type="windowClose">
-        <effect type="fade" start="100" end="0" time="300"/>
-    </animation>
+    <include>fadeAltOne</include>
 	<views>50</views>
     <controls>
         <include>tv_background</include>

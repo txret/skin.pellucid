@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+    <include>fadeAltTwo</include>
 	<views>50</views>
 	<controls>
 		<include>movie_background</include>

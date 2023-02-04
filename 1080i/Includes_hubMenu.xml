@@ -175,7 +175,9 @@
                 <onright condition="!window.isactive(1103)">9999</onright>
                 <onright condition="window.isactive(1103)">9876</onright>
                 <onup condition="control.isvisible(5115)">control.setfocus(5115)</onup>
-                <onback>activateWindow(home)</onback>
+                <onback condition="!window.isactive(1103)">9999</onback>
+                <onback condition="window.isactive(1103)">9876</onback>
+                <!--<onback>activateWindow(home)</onback>-->
                 <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>

@@ -9,7 +9,7 @@
 				<height>23-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-				<onback>9000</onback>
+				<onback>activateWindow(home)</onback>
 				<ondown>50</ondown>
 				<onup>50</onup>
 				<pagecontrol>60</pagecontrol>

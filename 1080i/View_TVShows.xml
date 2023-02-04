@@ -22,7 +22,7 @@
 	                <height>2-row</height>
 	                <onleft>9000</onleft>
 	                <ondown>9203</ondown>
-	                <onback>9000</onback>
+					<onback>activateWindow(home)</onback>
 	                <orientation>horizontal</orientation>
 	                <itemlayout width="4-col" height="2-row">
 	                    <control type="label">
@@ -73,7 +73,7 @@
 					<onup>9202</onup>
 	                <ondown>52</ondown>
 	                <onleft>9000</onleft>
-	                <onback>9000</onback>
+					<onback>activateWindow(home)</onback>
 	                <orientation>horizontal</orientation>
 					<onclick condition="container(9202).hasfocus(1)">activatewindow(Videos,videodb://tvshows/titles/$INFO[listitem.dbid]/)</onclick>
 	                <itemlayout width="586" height="5-col-gutter">
@@ -242,7 +242,7 @@
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>9203</onup>
-				<onback>9203</onback>
+				<onback>activateWindow(home)</onback>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="sine">250</scrolltime>
 				<itemlayout width="252" height="438">

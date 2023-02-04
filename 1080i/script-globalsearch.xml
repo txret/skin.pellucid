@@ -141,7 +141,7 @@
                     <posy>row-8-begin</posy>
                     <height>20-row</height>
                     <onleft>50</onleft>
-                    <onback>50</onback>
+                    <!--<onback>50</onback>-->
                 </control>
             </control>
             <!--page header-->

@@ -31,7 +31,6 @@
 	                <height>2-row</height>
 	                <onleft>9000</onleft>
 	                <ondown>9998</ondown>
-	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
 	                <itemlayout width="246" height="2-row">
 	                    <control type="label">
@@ -86,7 +85,7 @@
 					<onup>9123</onup>
 	                <ondown>54</ondown>
 	                <onleft>9000</onleft>
-	                <onback>9000</onback>
+					<onback>activateWindow(home)</onback>
 	                <orientation>horizontal</orientation>
 	                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
 	                <onclick>Control.SetFocus(50)</onclick>
@@ -187,7 +186,7 @@
 	                <onleft>9000</onleft>
 	                <onright>60</onright>
 	                <onup>9998</onup>
-	                <onback>9998</onback>
+					<onback>activateWindow(home)</onback>
 	                <pagecontrol>60</pagecontrol>
 	                <scrolltime tween="sine">250</scrolltime>
 	                <itemlayout width="293" height="360">

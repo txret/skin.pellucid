@@ -27,7 +27,7 @@
                     <height>23-row</height>
                     <onleft>9000</onleft>
                     <onright>60</onright>
-                    <onback>9000</onback>
+                    <!--<onback>9000</onback>-->
                     <pagecontrol>60</pagecontrol>
                     <itemlayout width="24-col" height="2-row">
                         <control type="image">
@@ -154,7 +154,7 @@
                     <posy>row-6-begin</posy>
                     <height>20-row</height>
                     <onleft>9999</onleft>
-                    <onback>9999</onback>
+                    <!--<onback>9999</onback>-->
                 </control>
             </control>
             <!--page header-->

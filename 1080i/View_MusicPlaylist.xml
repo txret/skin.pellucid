@@ -13,7 +13,7 @@
                 <onright>60</onright>
                 <onup>59</onup>
                 <ondown>59</ondown>
-                <onback>9000</onback>
+				<onback>activateWindow(home)</onback>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="sine" easing="inout">200</scrolltime>
                 <itemlayout width="23-col" height="3-row">

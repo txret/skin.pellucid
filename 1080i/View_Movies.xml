@@ -22,7 +22,6 @@
 	                <height>2-row</height>
 	                <onleft>9000</onleft>
 	                <ondown>9103</ondown>
-	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
 					<pulseonselect>true</pulseonselect>
 	                <itemlayout width="4-col" height="2-row">
@@ -74,7 +73,7 @@
 					<onup>9102</onup>
 	                <ondown>51</ondown>
 	                <onleft>9000</onleft>
-	                <onback>9000</onback>
+					<onback>activateWindow(home)</onback>
 	                <orientation>horizontal</orientation>
 	                <itemlayout width="586" height="5-col-gutter">
 	                    <control type="image">
@@ -231,7 +230,7 @@
 					<onleft>9000</onleft>
 					<onright>60</onright>
 					<onup>9103</onup>
-					<onback>9103</onback>
+					<onback>activateWindow(home)</onback>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="sine">250</scrolltime>
 					<itemlayout width="252" height="438">

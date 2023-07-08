@@ -107,7 +107,29 @@
                         <onclick>Powerdown()</onclick>
                     </item>
 -->
+                    <item id="3">
+                        <label>Apps</label>
+                        <thumb></thumb>
+                        <onclick>dialog.close(all,true)</onclick>
+            			<onclick>ActivateWindow(Programs,androidapp://sources/apps,return)</onclick>
+                    </item>
+                    <item id="4">
+                        <label>Kodi settings</label>
+                        <thumb></thumb>
+                        <onclick>dialog.close(all,true)</onclick>
+    					<onclick>ActivateWindow(Settings)</onclick>
+                    </item>
                     <item id="5">
+                        <label>Android settings</label>
+                        <thumb></thumb>
+                        <onclick>StartAndroidActivity("", "android.settings.SETTINGS")</onclick>
+                    </item>
+                    <item id="6">
+                        <label>Termux</label>
+                        <thumb></thumb>
+    					<onclick>StartAndroidActivity(com.termux)</onclick>
+                    </item>
+                    <item id="8">
                         <label>Reboot Kodi</label>
                         <thumb></thumb>
                         <onclick>Reboot()</onclick>

@@ -238,11 +238,11 @@
                     </item>
                     <item>
                         <visible>System.Platform.Android</visible>
-                        <description>ProtonVPN</description>
-                        <label>ProtonVPN</label>
+                        <description>Key Mapper</description>
+                        <label>Key Mapper</label>
                         <label2></label2>
-                        <property name="label3">Start ProtonVPN</property>
-                        <onclick>StartAndroidActivity("ch.protonvpn.android")</onclick>
+                        <property name="label3">Start Key Mapper</property>
+                        <onclick>StartAndroidActivity("io.github.sds100.keymapper")</onclick>
                     </item>
                 </content>
             </control>

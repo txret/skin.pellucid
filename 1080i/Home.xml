@@ -144,7 +144,7 @@
 				<animation condition="string.isEqual(Container(9000).NumItems,1)" effect="slide" end="432,0" time="0">conditional</animation>
 				<animation condition="string.isEqual(Container(9000).NumItems,2)" effect="slide" end="288,0" time="0">conditional</animation>
 				<animation condition="string.isEqual(Container(9000).NumItems,3)" effect="slide" end="144,0" time="0">conditional</animation>
-				<posy>row-12-begin</posy>
+				<posy>row-11-begin</posy>
 				<width>18-col</width>
 				<height>12-row</height>
 				<ondown>setfocus(9001,1)</ondown>
@@ -203,7 +203,7 @@
 			</control>
 			<!--power / settings-->
 			<control type="group">
-				<posx>851</posx>
+				<posx>900</posx>
 				<posy>row-26-begin</posy>
 				<control type="panel" id="9001">
 					<posx>38</posx>
@@ -252,25 +252,27 @@
 					</focusedlayout>
 					<content>
 						<item>
-							<label></label>
+							<label></label>
 							<onclick>ActivateWindow(shutdownmenu)</onclick>
 						</item>
+<!--
 						<item>
 							<label></label>
 							<onclick>ActivateWindow(Settings)</onclick>
 						</item>
+-->
 					</content>
 				</control>
 			</control>
 			<!--Date / time and weather-->
 			<control type="group">
 				<posx>col-1-begin</posx>
-				<posy>row-8-begin</posy>
+				<posy>row-6-begin</posy>
 				<animation type="conditional" condition="control.hasfocus(9999) + !player.hasaudio" reversible="true">
-					<effect type="slide" start="0,0" end="0,538" time="200" delay="0"/>
+					<effect type="slide" start="0,0" end="0,608" time="200" delay="0"/>
 				</animation>
 				<animation type="conditional" condition="control.hasfocus(9999) + player.hasaudio" reversible="true">
-					<effect type="slide" start="0,0" end="0,484" time="200" delay="0"/>
+					<effect type="slide" start="0,0" end="0,554" time="200" delay="0"/>
 				</animation>
 				<control type="label">
 					<posx>0</posx>

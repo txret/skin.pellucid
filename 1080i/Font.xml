@@ -95,9 +95,21 @@
         </font>
         <!--element specific-->
         <font>
+            <name>jump</name>
+            <filename>roboto/light.ttf</filename>
+            <size>18</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>jumpFocus</name>
+            <filename>roboto/bold.ttf</filename>
+            <size>40</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
             <name>textbox</name>
             <filename>roboto/medium.ttf</filename>
-            <size>30</size>
+            <size>20</size>
             <linespacing>1.1</linespacing>
         </font>
         <font>

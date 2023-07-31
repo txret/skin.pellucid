@@ -47,7 +47,7 @@
     <expression name="isMusicAlbum">container.content(albums) + [String.Contains(container.folderpath,musicdb://) | String.Contains(Container.folderpath,special://profile/playlists)]</expression>
     <expression name="isMusicGenre">container.content(genres) + String.Contains(container.folderpath,musicdb://)</expression>
     <expression name="isMusicSong">container.content(songs) + [String.Contains(Container.folderpath,musicdb://) | String.Contains(Container.folderpath,spotify)]</expression>
-    <expression name="isMusicPlaylist">container.content(songs) + [String.Contains(Container.folderpath,.xsp) | String.Contains(Container.foldername,PartyMode) | String.Contains(Container.folderpath,playlistmusic://)]</expression>
+    <expression name="isMusicPlaylist">container.content(songs) + [String.Contains(Container.folderpath,.xsp) | String.Contains(Container.foldername,PartyMode) | String.Contains(Container.folderpath,playlistmusic://)]</expression> 
 
     <!--photos-->
     <expression name="isPhotoAlbum">container.content(images)</expression>
@@ -57,6 +57,44 @@
 
     <!--weather-->
     <expression name="hasWeather">!String.IsEmpty(Window(Weather).Property(WeatherProvider)) + !String.String.IsEmpty(weather.temperature) + !String.String.IsEmpty(weather.conditions)</expression>
+
+    <!--quick jump instead of scrollbar-->
+    <include name="jump">
+        <control type="group" id="8000">
+            <control type="group">
+                <visible>Control.IsVisible(60)</visible>
+                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+                <control type="panel" id="60">
+                    <onleft>9999</onleft>
+                    <onback>9999</onback>
+                    <posx>54r</posx>
+                    <posy>row-7-begin</posy>
+                    <height>23-row</height>
+                    <width>50</width>
+                    <orientation>vertical</orientation>
+                    <itemlayout height="29" width="50">
+                        <control type="label">
+                            <width>100%</width>
+                            <align>center</align>
+                            <label>$INFO[ListItem.Label]</label>
+                            <textcolor>textActive</textcolor>
+                            <font>jump</font>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="60" width="50">
+                        <control type="label">
+                            <width>100%</width>
+                            <align>center</align>
+                            <label>$INFO[ListItem.Label]</label>
+                            <textcolor>textActive</textcolor>
+                            <font>jumpFocus</font>
+                        </control>
+                    </focusedlayout>
+                    <content>plugin://skin.pellucid/?action=list&amp;showall=true</content>
+                </control>
+            </control>
+        </control>
+    </include>
 
     <!-- Navigation screen backgrounds -->
     <include name="settings_background">

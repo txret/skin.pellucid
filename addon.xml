@@ -6,10 +6,13 @@
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.skinshortcuts" version="2.0.1"/>
     </requires>
+    <extension point="xbmc.python.pluginsource" library="plugin.py">
+        <provides>video</provides>
+    </extension>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
-     <extension point="xbmc.addon.metadata">
+    <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <license>Creative Commons Attribution-Noncommercial-Share Alike 3.0</license>
         <source>https://github.com/txret/skin.pellucid</source>

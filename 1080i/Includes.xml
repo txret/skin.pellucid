@@ -59,7 +59,7 @@
     <expression name="hasWeather">!String.IsEmpty(Window(Weather).Property(WeatherProvider)) + !String.String.IsEmpty(weather.temperature) + !String.String.IsEmpty(weather.conditions)</expression>
 
     <!--quick jump instead of scrollbar-->
-    <include name="_jump">
+    <include name="jump">
         <control type="group" id="8000">
             <control type="group">
                 <visible>Control.IsVisible(60)</visible>
@@ -90,7 +90,7 @@
                             <font>jumpFocus</font>
                         </control>
                     </focusedlayout>
-                    <nested />
+                    <content>plugin://skin.pellucid/?action=list&amp;content=$INFO[Container.Content]&amp;showall=false</content>
                 </control>
             </control>
         </control>

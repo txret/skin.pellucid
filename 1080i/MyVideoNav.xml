@@ -28,8 +28,7 @@
                 </control>
             </control>
             <!-- quick jump instead of scrollbar -->
-            <include condition="$EXP[isMovie]">jump_movies</include>
-            <include condition="!$EXP[isMovie]">jump_tvshows</include>
+            <include>jump</include>
             <!--page header-->
             <control type="group">
 				<include>pageHeader</include>

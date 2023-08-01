@@ -3,7 +3,7 @@
 
 ########################
 
-import sys, json, re
+import sys, json
 import urllib.parse as urlparse
 import xbmc, xbmcplugin, xbmcgui, xbmcaddon
 
@@ -20,7 +20,7 @@ def main():
     
     action = params.get('action', None)
     if action == 'list':
-        li = _list(params.get('content', 'false'), params.get('showall', 'false') == 'true')
+        li = _list(params.get('showall', 'false') == 'true')
         xbmcplugin.addDirectoryItems(handle=int(sys.argv[1]), items=li)
         xbmcplugin.endOfDirectory(handle=int(sys.argv[1]), cacheToDisc=False)
     elif action == 'jump':
@@ -28,33 +28,9 @@ def main():
 
 ########################
 
-def _list(content, showall):
-    xbmc.log(msg=f'[ {ADDON_ID} ] list called', level=xbmc.LOGINFO)
-    if content == 'movies':
-        method = 'VideoLibrary.GetMovies'
-    elif content == 'tvshows':
-        method = 'VideoLibrary.GetTVShows'
-    elif content == 'albums':
-        method = 'AudioLibrary.GetAlbums'
-    else:
-        return []
-
-    result = json.loads(xbmc.executeJSONRPC(json.dumps({'jsonrpc': '2.0', 'id': 1, 'method': method, 'params': {}})))
-    chars = {}
-    for title in result['result'][content]:
-        c = re.sub('^the ', '', title['label'], flags=re.IGNORECASE)[0].upper()
-        if c.isnumeric():
-            chars['#'] = True
-        else:
-            chars[c] = True
-
-    xbmc.log(msg=f"[ {ADDON_ID} ] RPC: {result}", level=xbmc.LOGINFO)
-    xbmc.log(msg=f"[ {ADDON_ID} ] chars: {chars}", level=xbmc.LOGINFO)
-    #for title in xbmc.executeJSONRPC(json.dumps({'jsonrpc': '2.0', 'id': 1, 'method': method, 'params': {}})):
-    #    xbmc.log(msg=f'[ {ADDON_ID} ] title {title}', level=xbmc.LOGINFO)
-
-
-    """if not xbmc.getInfoLabel('Container.NumItems'):
+def _list(showall):
+    #xbmc.log(msg=f'[ {ADDON_ID} ] list called', level=xbmc.LOGINFO)
+    if not xbmc.getInfoLabel('Container.NumItems'):
         return []
     
     chars = {}
@@ -63,7 +39,7 @@ def _list(content, showall):
         if c.isnumeric():
             chars['#'] = True
         else:
-            chars[c] = True"""
+            chars[c] = True
 
     list_ = []
     if len(chars) > 1:

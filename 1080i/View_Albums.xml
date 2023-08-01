@@ -187,7 +187,6 @@
 	                <onright>60</onright>
 	                <onup>9998</onup>
 					<onback>activateWindow(home)</onback>
-	                <pagecontrol>60</pagecontrol>
 	                <scrolltime tween="sine">250</scrolltime>
 	                <itemlayout width="293" height="360">
 	                    <control type="image">

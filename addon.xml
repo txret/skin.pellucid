@@ -8,6 +8,7 @@
     </requires>
     <extension point="xbmc.python.pluginsource" library="plugin.py">
         <provides>video</provides>
+        <provides>music</provides>
     </extension>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />

@@ -90,7 +90,7 @@
                             <font>jumpFocus</font>
                         </control>
                     </focusedlayout>
-                    <content>plugin://skin.pellucid/?action=list&amp;showall=true</content>
+                    <content>plugin://skin.pellucid/?action=list&amp;showall=false</content>
                 </control>
             </control>
         </control>

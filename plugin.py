@@ -22,13 +22,14 @@ def main():
     if action == 'list':
         li = _list(params.get('showall', 'false') == 'true')
         xbmcplugin.addDirectoryItems(handle=int(sys.argv[1]), items=li)
-        xbmcplugin.endOfDirectory(handle=int(sys.argv[1]))
+        xbmcplugin.endOfDirectory(handle=int(sys.argv[1]), cacheToDisc=False)
     elif action == 'jump':
         _jump(params.get('pos', '#'))
 
 ########################
 
 def _list(showall):
+    #xbmc.log(msg=f'[ {ADDON_ID} ] list called', level=xbmc.LOGINFO)
     if not xbmc.getInfoLabel('Container.NumItems'):
         return []
     
